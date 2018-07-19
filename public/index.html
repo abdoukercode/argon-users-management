@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="https://www.aragon-erh.com/wp-content/themes/digital/img/favicon.ico" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <title>Users Management System</title>
+</head>
+
+<body>
+    <div id="container">
+        <aside>
+            <nav>
+                <ul>
+                    <li id="intro">
+                        <a href="#">
+                            <p>
+                                <i class="material-icons">home</i>Home</p>
+                        </a>
+                    </li>
+                    <li id="users">
+                        <a href="#">
+                            <p>
+                                <i class="material-icons">people_outline</i>Users</p>
+                        </a>
+                    </li>
+                    <li id="roles">
+                        <a href="#">
+                            <p>
+                                <i class="material-icons">contacts</i>Roles</p>
+                        </a>
+                    </li id="roles">
+                    <li id="rights">
+                        <a href="#">
+                            <i class="material-icons">accessibility</i>Rights
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <section id="contents">
+            <div class="intro">
+
+                <img src="https://www.aragon-erh.com/wp-content/themes/digital/img/favicon.png" alt="">
+                <h1>Test pour d&eacute;veloppeur Front-end</h1>
+                <h3>Technologie : Javascript, CSS.</h3>
+                <h4>Objectif : L'objectif de cet exercice est d'&eacute;valuer votre capacit&eacute; &agrave; organiser votre
+                    code front-end en r&eacute;alisant une interface qui questionne une API donn&eacute;e.</h4>
+                <p>Exercice : L'interface de gestion des droits.</p>
+                <p>Partie 1) : Cet exercice est compl&egrave;tement orient&eacute; front-end. Il n'est donc pas recquis de fournir
+                    du code PHP associ&eacute;. Vous pouvez n&eacute;anmoins en faire si vous pensez que c'est n&eacute;cessaire.
+                    &Agrave; la place du code back-end, nous vous fournissons une API qui vous procurera les donn&eacute;es
+                    n&eacute;cessaires au d&eacute;veloppement de cette interface utilisateur.</p>
+                <p>Vous trouverez cette API ici : https://abdoutestapi.aragon-erh.com Vous trouverez sa documentation ici :
+                    <a href="https://abdoutestapi.aragon-erh.com/doc/">https://abdoutestapi.aragon-erh.com/doc/ </a>
+                </p>
+                <p>Vous devez coder une interface qui permet de g&eacute;rer les r&ocirc;les et les droits associ&eacute;s aux
+                    utilisateurs d'une application. En utilisant l'API fournie, qui expose les ressources n&eacute;cessaires,
+                    L'interface doit permettre :</p>
+                <p>- De lister les utilisateurs, les r&ocirc;les et les droits</p>
+                <p>- D'ajouter des utilisateurs &agrave; des roles</p>
+                <p>- D'ajouter des droits &agrave; un r&ocirc;le La fa&ccedil;on dont les informations sont dispos&eacute;es
+                    est laiss&eacute;e &agrave; votre libre choix.</p>
+                <p>Vous avez notamment la possibilit&eacute; de faire autant de "vues" que vous le souhaitez.</p>
+                <p>On appr&eacute;ciera, par exemple, la pr&eacute;sence des fonctionnalit&eacute;s suivantes :</p>
+                <p>- Drag'n'Drop</p>
+                <p>- Gestion et pr&eacute;sentation des erreurs remont&eacute;es par l'API - ...</p>
+                <p>&nbsp;</p>
+                <p>Contraintes technologiques : - Il est interdit d'utiliser des frameworks JS (Angular, React, Vue js, Bootstrap
+                    etc...) - En revanche, vous avez le droit d'utiliser des librairies JS et css (Jquery, SASS, Webpack,
+                    etc...).
+                </p>
+                <p>Partie 2) Pour chaque librairie utilis&eacute;e, Justifiez votre choix en &eacute;crivant un petit paragraphe
+                    exposant les pours et les contres de l'usage de la techno en question. (Maintenabilit&eacute;, facilit&eacute;
+                    de d&eacute;veloppement, performance, etc...) De m&ecirc;me, si vous choisissez d'&eacute;viter certaines
+                    technos en particulier, justifiez votre choix de la m&ecirc;me fa&ccedil;on.</p>
+                <p>Enfin, si vous choisissez de tout faire en Javascript et CSS Natif, vous devrez &eacute;galement justifier
+                    votre choix.</p>
+                <p>&nbsp;</p>
+                <p>Livraison : Une archive (.zip, .rar, ...) contenant votre code. Ajoutez-y les &eacute;l&eacute;ments que
+                    vous souhaitez afin que le tout soit facilement compr&eacute;hensible. Aussi, dans votre mail de r&eacute;ponse,
+                    veuillez nous indiquer combien de temps vous avez pass&eacute; sur cet exercice ainsi que des remarques,
+                    si vous en avez.&nbsp;</p>
+                <p>&nbsp;</p>
+            </div>
+            <div class="users">
+                <h2>Users Management</h2>
+                <div class="section-menu">
+
+                    <ul>
+
+                        <li id="users-list">
+                            <a href="#" class="waves-effect waves-teal btn">Users List</a>
+
+                        </li>
+                        <li id="users-create">
+                            <a href="#" class="waves-effect waves-teal btn">Create User</a>
+
+                        </li>
+                        <li id="users-other">
+                            <a href="#" class="waves-effect waves-teal btn">Other Action</a>
+
+                        </li>
+
+                    </ul>
+                </div>
+                <div style="clear: both;"></div>
+                <div class="users-list">
+                    <h2>Userslist</h2>
+                </div>
+                <div class="users-create">
+                    <h2>Create User</h2>
+                </div>
+                <div class="users-other">
+                    <h2>User Other Action</h2>
+                </div>
+            </div>
+            <div class="roles">
+                <h2>Roles Management</h2>
+                <div class="section-menu">
+                    <ul>
+                        <li id="roles-list">
+                            <a href="#" class="waves-effect waves-teal btn">List Roles</a>
+
+                        </li>
+                        <li id="roles-create">
+                            <a href="#" class="waves-effect waves-teal btn">Create Role</a>
+
+                        </li>
+                        <li id="roles-set">
+                            <a href="#" class="waves-effect waves-teal btn">Set Users/Roles</a>
+
+                        </li>
+
+                    </ul>
+                </div>
+                <div style="clear: both;"></div>
+                <div class="roles-list">
+                    <h2>List Roles</h2>
+                </div>
+                <div class="roles-create">
+                    <h2>Create Role</h2>
+                </div>
+                <div class="roles-set">
+                    <h2>Set Users/Roles</h2>
+                </div>
+            </div>
+            <div class="rights">
+                <h2>Rights Page</h2>
+                <div class="section-menu">
+                    <ul>
+                        <li id="rights-list">
+                            <a href="#" class="waves-effect waves-light btn">List Rights</a>
+                        </li>
+                        <li id="rights-create">
+                            <a href="#" class="waves-effect waves-light btn">Create Rights</a>
+                        </li>
+                        <li id="rights-set">
+                            <a href="#" class="waves-effect waves-light btn">Set Right/Roles</a>
+                        </li>
+                    </ul>
+                </div>
+                <div style="clear: both;"></div>
+                <div class="rights-list">
+                    <h2>List Rights</h2>
+                </div>
+                <div class="rights-create">
+                    <h2>Create Rights</h2>
+                </div>
+                <div class="rights-set">
+                    <h2>Set Right/Roles</h2>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="bundle.js"></script>
+</body>
+
+</html>

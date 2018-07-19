@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    background: #F2F2F2;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 10% auto;
+    height: 100%;
+    section {
+        padding: 30px 50px;
+        .users,
+        .roles,
+        .rights,
+        .users-list,
+        .users-other,
+        .users-create,
+        .roles-list,
+        .roles-create,
+        .roles-set,
+        .rights-list,
+        .rights-create,
+        .rights-set,
+            {
+            display: none;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            li {
+                /* background: #fff; */
+                border-radius: 8px;
+                padding: 10px;
+                margin-bottom: 8px;
+                a {
+                    font-size: 0.8em;
+                    text-decoration: none;
+                }
+                ul {
+                    margin-top: 20px;
+                    li {
+                        padding: 0;
+                        a {
+                            font-size: 1em;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+nav {
+    background: #2D2E2E;
+    height: 100%;
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        li {
+            a {
+                color: #fff;
+                padding: 20px;
+                display: block;
+                text-decoration: none;
+            }
+            a:active {
+                color: yellow;
+            }
+        }
+    }
+}
+
+.section-menu {
+    li {
+        float: left;
+        margin-right: 20px;
+        background-color: #90caf9;
+        a {
+            display: block;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+        }
+    }
+}
+
+select,
+label,
+input[type="submit"] {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+#error-msg {
+    color: red;
+    font-size: 1.5rem;
+}
